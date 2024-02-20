@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    font-size: 6.25%;
+  --clr-button: rgb(224, 126, 126);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(224,167,126);
+  background: linear-gradient(0deg, #e0a77e 0%, #f3c79d 30%, #ffdead 100%);
+  box-shadow: rgba(0, 0, 0, 0.17) 0rem -23rem 25rem 0rem inset, rgba(0, 0, 0, 0.15) 0rem -36rem 30rem 0rem inset, rgba(0, 0, 0, 0.1) 0rem -79rem 40rem 0rem inset, rgba(0, 0, 0, 0.06) 0rem 2rem 1rem, rgba(0, 0, 0, 0.09) 0rem 4rem 2rem, rgba(0, 0, 0, 0.09) 0rem 8rem 4rem, rgba(0, 0, 0, 0.09) 0rem 16rem 8rem, rgba(0, 0, 0, 0.09) 0rem 32rem 16rem;
+  font-family: 'Tangerine', cursive;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#playButton {
+  width: 500rem;
+  height: 500rem;
+  border-radius: 50%;
+  background-color: var(--clr-button); 
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.17) 0rem -23rem 25rem 0rem inset, rgba(0, 0, 0, 0.15) 0rem -36rem 30rem 0rem inset, rgba(0, 0, 0, 0.1) 0rem -79rem 40rem 0rem inset, rgba(0, 0, 0, 0.06) 0rem 2rem 1rem, rgba(0, 0, 0, 0.09) 0rem 4rem 2rem, rgba(0, 0, 0, 0.09) 0rem 8rem 4rem, rgba(0, 0, 0, 0.09) 0rem 16rem 8rem, rgba(0, 0, 0, 0.09) 0rem 32rem 16rem;
+  color: white;
+  font-size: 24rem;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  outline: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 500rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#playButton img {
+  width: 360rem;
+  height: 360rem;
+}
+
+#leftSide {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#rightSide {
+  width: 50%;
+}
+ 
+.photo {
+  height: 449rem;
+  position: sticky;
+  width: 360rem;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+
+@keyframes moveAndRotate {
+  from {
+      transform: rotate(-10deg) translateY(100%);
+  }
+  to {
+      transform: rotate(-10deg) translateY(0);
+  }
+}
+
+@keyframes moveAndRotateEven {
+  from {
+      transform: rotate(10deg) translateY(100%);
+  }
+  to {
+      transform: rotate(10deg) translateY(0);
+  }
+}
+
+
+.lyrics {
+  height: 449rem;
+  display: flex;
+  flex-direction: column;
+  padding: 48rem;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 50rem;
+  font-weight: 700;
+  color: #8B0000;
+}
+
+h2 {
+  font-size: 40rem;
+  font-weight: 400;
+}
+
+/* Estilos para o texto */
+.lyrics h1,
+.lyrics h2 {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Estilo para as letras */
+.lyrics h1 span,
+.lyrics h2 span {
+    display: inline-block;
+    opacity: 0; /* Inicialmente, a letra estará oculta */
+    animation: text-appear 0.5s forwards; /* Animação de aparecimento da letra */
+}
+
+@keyframes text-appear {
+    to { opacity: 1; } /* A letra aparece gradualmente */
+}
+
