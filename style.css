@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 :root {
@@ -18,10 +19,9 @@ body {
   justify-content: center;
   align-items: center;
   background: rgb(224, 167, 126);
-  background: linear-gradient(0deg, #e0a77e 0%, #f3c79d 30%, #ffdead 100%);
+  background: linear-gradient(0deg, #e99f6a 0%, #f3c79d 30%, rgb(214, 184, 138) 100%);
   box-shadow: rgba(0, 0, 0, 0.17) 0rem -23rem 25rem 0rem inset, rgba(0, 0, 0, 0.15) 0rem -36rem 30rem 0rem inset, rgba(0, 0, 0, 0.1) 0rem -79rem 40rem 0rem inset, rgba(0, 0, 0, 0.06) 0rem 2rem 1rem, rgba(0, 0, 0, 0.09) 0rem 4rem 2rem, rgba(0, 0, 0, 0.09) 0rem 8rem 4rem, rgba(0, 0, 0, 0.09) 0rem 16rem 8rem, rgba(0, 0, 0, 0.09) 0rem 32rem 16rem;
   font-family: 'Tangerine', cursive;
-  display: flex;
   flex-direction: column;
 }
 
@@ -40,11 +40,11 @@ header {
   gap: 38rem;
 }
 
+
 .line {
   border: solid 1px var(--red);
   border-radius: 50%;
   width: 650rem;
-
 }
 
 header span {
@@ -55,7 +55,7 @@ header span {
   width: 50rem;
   height: 50rem;
   border-radius: 50%;
-  background-color: var(--clr-button);
+  background-color: var(--red);
   border: none;
   color: white;
   font-size: 24rem;
@@ -64,15 +64,17 @@ header span {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0 0 2px #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  line-height: 1;
 }
 
 #playButton:hover {
-  box-shadow: 0px 0 0 2px #fff, 0px 0 0 10px rgb(221, 99, 99);
+  transform: translateY(2px);
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
 }
 
 #playButton:active {
-  box-shadow: 0px 0 0 11px #fff, 0px 0 0 10px rgb(221, 99, 99);
+  box-shadow: 0px 0 0 11px #fff, 0px 0 0 10px rgb(221, 99, 99); 
   background-color: #fff;
 }
 
@@ -87,20 +89,20 @@ header span {
 }
 
 #leftSide {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 #rightSide {
-  width: 50%;
+  width: 60%;
 }
 
 .photo {
   height: 449rem;
-  position: sticky;
   width: 360rem;
+  position: sticky;
   opacity: 0;
   transform: translateY(100%);
   transition: opacity 1s ease, transform 1s ease;
@@ -127,12 +129,11 @@ header span {
   }
 }
 
-
 .lyrics {
   height: 449rem;
+  padding: 48rem;
   display: flex;
   flex-direction: column;
-  padding: 48rem;
   justify-content: center;
 }
 
@@ -147,12 +148,12 @@ h2 {
   font-weight: 400;
 }
 
-/* Animations */
 .lyrics h1,
 .lyrics h2 {
     overflow: hidden;
     opacity: 0;
     white-space: nowrap;
+    -webkit-user-select: none;
 }
 
 .lyrics h1 span,
@@ -166,4 +167,32 @@ h2 {
     to {
         opacity: 1;
     }
+}
+
+@media only screen and (max-width: 738px) {
+  header h1 {
+    font-size: 40rem;
+  }
+  
+  .line {
+    width: 350rem;
+  }
+
+  .photo {
+    height: 160rem;
+    width: 130rem;
+  }
+
+  .lyrics {
+    height: 160rem;
+    padding: 10rem;
+  }
+
+  h1 {
+    font-size: 20rem;
+  }
+  
+  h2 {
+    font-size: 16rem;
+  }
 }
