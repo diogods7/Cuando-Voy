@@ -3,6 +3,27 @@ const audio = new Audio('music.mp3');
 const photos = document.querySelectorAll('.photo');
 const lyricElements = document.querySelectorAll('.lyrics h1, .lyrics h2');
 const speed = 70;
+const myPopup = new Popup({
+    id: "my-popup",
+    title: "Atenção!",
+    content: `
+        Aperte apenas uma vez no botão e aguarde...`,
+    showImmediately: true,
+    css: `
+    .popup.my-popup .popup-content {
+        background-color: rgba(0, 0, 0, 0.548) !important;
+      }
+
+    .popup.my-popup .popup-title, .popup.my-popup p {
+        font-family: 'Tangerine', cursive !important;
+        color: #fff !important;
+    }
+    
+    .popup.my-popup .popup-close {
+        color: var(--red) !important;
+    }
+    `
+});
 
 playButton.addEventListener('click', () => {
     playPhoto();

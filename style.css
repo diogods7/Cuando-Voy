@@ -204,3 +204,13 @@ h2 {
     width: 60%;
   }
 }
+
+.popup.my-popup .popup-title {
+  font-size: 100rem;
+}
+
+.popup.my-popup p {
+    font-size: 60rem;
+}
+
+
