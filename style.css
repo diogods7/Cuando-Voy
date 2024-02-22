@@ -6,7 +6,6 @@
 }
 
 :root {
-  font-size: 6.25%;
   --clr-button: rgb(224, 126, 126);
   --red: #8B0000;
 }
@@ -185,7 +184,7 @@ h2 {
 
   .lyrics {
     height: 160px;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
   }
 
   h1 {

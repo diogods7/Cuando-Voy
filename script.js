@@ -7,9 +7,10 @@ const myPopup = new Popup({
     id: "my-popup",
     title: "Atenção!",
     content: `
+        Ligue o som,
         Aperte apenas uma vez no botão e aguarde...`,
-    showImmediately: true,
-    css: `
+  showImmediately: true,
+  css: `
     .popup.my-popup .popup-content {
         background-color: rgba(0, 0, 0, 0.548) !important;
       }
@@ -35,10 +36,14 @@ const myPopup = new Popup({
     @media (max-width: 415px) {
     .popup.my-popup .popup-title {
       font-size: 50px;
+      padding: 40px 0 20px 0;
     }
 
     .popup.my-popup p {
       font-size: 30px;
+    }
+    .popup.my-popup p:nth-of-type(1) {
+      padding-top: 40px;
     }
     `
 });
