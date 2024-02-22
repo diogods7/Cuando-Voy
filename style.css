@@ -195,4 +195,12 @@ h2 {
   h2 {
     font-size: 16rem;
   }
+
+  #leftSide {
+    width: 40%;
+  }
+
+  #rigthSide {
+    width: 60%;
+  }
 }
