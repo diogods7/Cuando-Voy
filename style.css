@@ -19,8 +19,8 @@ body {
   justify-content: center;
   align-items: center;
   background: rgb(224, 167, 126);
-  background: linear-gradient(0deg, #e99f6a 0%, #f3c79d 30%, rgb(214, 184, 138) 100%);
-  box-shadow: rgba(0, 0, 0, 0.17) 0rem -23rem 25rem 0rem inset, rgba(0, 0, 0, 0.15) 0rem -36rem 30rem 0rem inset, rgba(0, 0, 0, 0.1) 0rem -79rem 40rem 0rem inset, rgba(0, 0, 0, 0.06) 0rem 2rem 1rem, rgba(0, 0, 0, 0.09) 0rem 4rem 2rem, rgba(0, 0, 0, 0.09) 0rem 8rem 4rem, rgba(0, 0, 0, 0.09) 0rem 16rem 8rem, rgba(0, 0, 0, 0.09) 0rem 32rem 16rem;
+  background: linear-gradient(0deg, #e99f6a 0%, #f3c79d 30%, rgb(233, 183, 109) 100%);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   font-family: 'Tangerine', cursive;
   flex-direction: column;
 }
@@ -32,19 +32,19 @@ body {
 }
 
 header {
-  height: 200rem;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 38rem;
+  gap: 38px;
 }
 
 
 .line {
   border: solid 1px var(--red);
   border-radius: 50%;
-  width: 650rem;
+  width: 650px;
 }
 
 header span {
@@ -52,13 +52,13 @@ header span {
 }
 
 #playButton {
-  width: 50rem;
-  height: 50rem;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: var(--red);
   border: none;
   color: white;
-  font-size: 24rem;
+  font-size: 24px;
   cursor: pointer;
   outline: none;
   display: flex;
@@ -84,8 +84,8 @@ header span {
 }
 
 #playButton img {
-  width: 30rem;
-  height: 30rem;
+  width: 30px;
+  height: 30px;
 }
 
 #leftSide {
@@ -100,8 +100,8 @@ header span {
 }
 
 .photo {
-  height: 449rem;
-  width: 360rem;
+  height: 449px;
+  width: 360px;
   position: sticky;
   opacity: 0;
   transform: translateY(100%);
@@ -130,21 +130,21 @@ header span {
 }
 
 .lyrics {
-  height: 449rem;
-  padding: 48rem;
+  height: 449px;
+  padding: 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 h1 {
-  font-size: 50rem;
+  font-size: 50px;
   font-weight: 700;
   color: var(--red);
 }
 
 h2 {
-  font-size: 40rem;
+  font-size: 40px;
   font-weight: 400;
 }
 
@@ -171,29 +171,29 @@ h2 {
 
 @media (max-width: 415px) {
   header h1 {
-    font-size: 40rem;
+    font-size: 40px;
   }
   
   .line {
-    width: 350rem;
+    width: 350px;
   }
 
   .photo {
-    height: 160rem;
-    width: 130rem;
+    height: 160px;
+    width: 130px;
   }
 
   .lyrics {
-    height: 160rem;
-    padding: 10rem;
+    height: 160px;
+    padding: 10px;
   }
 
   h1 {
-    font-size: 20rem;
+    font-size: 20px;
   }
   
   h2 {
-    font-size: 16rem;
+    font-size: 16px;
   }
 
   #leftSide {
@@ -206,11 +206,9 @@ h2 {
 }
 
 .popup.my-popup .popup-title {
-  font-size: 100rem;
+  font-size: 100px;
 }
 
 .popup.my-popup p {
-    font-size: 60rem;
+    font-size: 60px;
 }
-
-

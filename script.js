@@ -18,9 +18,27 @@ const myPopup = new Popup({
         font-family: 'Tangerine', cursive !important;
         color: #fff !important;
     }
-    
+
     .popup.my-popup .popup-close {
         color: var(--red) !important;
+    }
+
+    .popup.my-popup .popup-title {
+      font-size: 100px;
+      padding: 20px 0 20px 0;
+    }
+
+    .popup.my-popup p {
+      font-size: 60px;
+    }
+
+    @media (max-width: 415px) {
+    .popup.my-popup .popup-title {
+      font-size: 50px;
+    }
+
+    .popup.my-popup p {
+      font-size: 30px;
     }
     `
 });
